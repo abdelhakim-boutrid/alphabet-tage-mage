@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Vérifiez instantanément la position d’une lettre dans l’alphabet. A vaut 1, Z vaut 26. Un outil simple pour apprendre en autonomie.">
+  <meta name="theme-color" content="#f5f5f7">
+  <title>Alphabet TAGE MAGE — Lettres et nombres</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231d1d1f'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-family='Arial' font-weight='700' font-size='38' fill='white'%3EA%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <header><a class="brand" href="./" aria-label="Alphabet, accueil"><span class="brand-icon">a.</span>Alphabet<span class="brand-sub">TAGE MAGE</span></a><span class="header-note">Le repère pour la logique</span></header>
+  <main>
+    <div class="intro"><p class="eyebrow">A = 1 · Z = 26</p><h1>Chaque lettre.<br><span>À sa place.</span></h1><p class="description">Une lettre ou un nombre.<br>La correspondance, instantanément.</p></div>
+    <section class="converter" aria-label="Convertisseur alphabet">
+      <div class="card input-card"><div class="card-top"><label for="entry">Votre saisie</label><span class="card-tag">A–Z / 1–26</span></div><input id="entry" type="text" placeholder="A ou 1" autocomplete="off" autocapitalize="characters" spellcheck="false" aria-describedby="hint" aria-invalid="false"><div class="card-bottom"><span>Lettre ou nombre</span><button type="button" id="clear" aria-label="Effacer la saisie" hidden>Effacer <kbd>esc</kbd></button></div></div>
+      <span class="equals" aria-hidden="true">=</span>
+      <div class="card result-card"><div class="card-top"><span id="result-label">Correspondance</span><span class="result-indicator" aria-hidden="true">↔</span></div><output id="result" for="entry" aria-labelledby="result-label">—</output><div class="card-bottom"><span id="result-type">Votre réponse apparaît ici</span><span class="result-check" id="check" hidden aria-hidden="true">✓</span></div></div>
+    </section>
+    <p id="hint" role="status" aria-live="polite">Saisissez une lettre de A à Z ou un entier de 1 à 26.</p>
+    <div class="examples"><span>Essayez</span><button type="button" data-value="A">A <span>↔</span> 1</button><button type="button" data-value="J">J <span>↔</span> 10</button><button type="button" data-value="17">17 <span>↔</span> Q</button></div>
+  </main>
+  <footer><span>Un petit outil pour de grands déclics.</span><span>26 lettres. Autant de repères.</span></footer>
+</body>
+</html>
