@@ -14,4 +14,4 @@ Depuis ce dossier, lancer `python3 -m http.server 4173 --directory dist`, puis o
 
 HTML, CSS et JavaScript natifs. Aucun compte, dépendance, suivi ou serveur de calcul. Les conversions restent dans le navigateur. Interface française, responsive, compatible clavier et lecteurs d’écran.
 
-Les fichiers à héberger sont dans `dist/`. Le manifeste `.openai/hosting.json` configure l’hébergement Sites. Le support WebMCP est facultatif et détecté automatiquement.
+Les fichiers à héberger sont dans `dist/`. Le fichier `vercel.json` configure leur publication sur Vercel.
