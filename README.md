@@ -2,6 +2,9 @@
 
 Un convertisseur instantané pour apprendre la position des lettres : A ↔ 1, J ↔ 10, Q ↔ 17, Z ↔ 26.
 
+## Lien
+  alphabettraining.vercel.app
+
 ## Utilisation
 
 Saisir une lettre (majuscule ou minuscule) ou un entier entre 1 et 26. La réponse apparaît immédiatement. Les entrées invalides sont signalées sans afficher de correspondance trompeuse. Échap efface la saisie.
