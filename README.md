@@ -3,7 +3,7 @@
 Un convertisseur instantané pour apprendre la position des lettres : A ↔ 1, J ↔ 10, Q ↔ 17, Z ↔ 26.
 
 ## Lien
-  alphabettraining.vercel.app
+  ↔ alphabettraining.vercel.app
 
 ## Utilisation
 
